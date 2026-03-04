@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Bases</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Conversor Numérico</h1>
+        
+        <div class="input-group">
+            <label for="inputValue">Digite o número:</label>
+            <input type="text" id="inputValue" placeholder="Ex: 1010, FF, 256" autocomplete="off">
+        </div>
+
+        <div class="input-group">
+            <label for="baseSelect">Este número está em qual base?</label>
+            <select id="baseSelect">
+                <option value="10">Decimal</option>
+                <option value="2">Binário</option>
+                <option value="8">Octal</option>
+                <option value="16">Hexadecimal</option>
+            </select>
+        </div>
+
+        <button id="btnConvert">Converter</button>
+
+        <div class="results">
+            <div class="result-item"><strong>Decimal:</strong> <span id="resDec">-</span></div>
+            <div class="result-item"><strong>Binário:</strong> <span id="resBin">-</span></div>
+            <div class="result-item"><strong>Octal:</strong> <span id="resOct">-</span></div>
+            <div class="result-item"><strong>Hexadecimal:</strong> <span id="resHex">-</span></div>
+        </div>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+</html>
